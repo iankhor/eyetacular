@@ -1,7 +1,7 @@
 import React , { Component }from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-export default class AboutUs extends Component {
+export default class Pricing extends Component {
   constructor(props) {
     super(props);
 
@@ -21,15 +21,12 @@ export default class AboutUs extends Component {
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
 
-        <DropdownToggle className="Header-btn-dropdown">ABOUT US</DropdownToggle>
+        <DropdownToggle className="Header-btn-dropdown">PRICING</DropdownToggle>
 
         <DropdownMenu className="Header-btn-dropdown-item">
-          <DropdownItem>ABOUT US</DropdownItem>
-          <DropdownItem>BOARD</DropdownItem>
-          <DropdownItem>NEWS</DropdownItem>
-          <DropdownItem>SECURITY</DropdownItem>
-          <DropdownItem>FAQ</DropdownItem>
-          <DropdownItem>PRIVACY POLICY</DropdownItem>
+          <DropdownItem>OPTOMETRIST</DropdownItem>
+          <DropdownItem>OPHTHALMOLOGIST</DropdownItem>
+
         </DropdownMenu>
       </Dropdown>
 
