@@ -6,9 +6,10 @@ import {  Collapse,
           Nav, 
           NavItem, 
           NavLink,
-          Media } from 'reactstrap';
+          Button } from 'reactstrap';
 
 import OculoLogo from './../../assets/img/logo.png'
+import AboutUs from './AboutUs'
 
 class Header extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class Header extends React.Component {
   }
   render() {
     return (
-        <Navbar light toggleable>
+        <Navbar light toggleable className="Header-font">
 
           <NavbarToggler right onClick={this.toggle} />
 
@@ -37,11 +38,24 @@ class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/Home">HOME</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+                <AboutUs />
               </NavItem>
+              <NavItem>
+                <NavLink href="/Home">OPTOMETRIST</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Home">OPHTHALMOLOGIST</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Home">FREE TRIAL</NavLink>
+              </NavItem>
+              <NavItem>
+                <Button color="danger">LOGIN</Button>
+              </NavItem>
+
             </Nav>
           </Collapse>
 
