@@ -3,6 +3,7 @@ import React from 'react'
 //Routes
 import NotFound from './components/shared/NotFound'
 import App from './components/App';
+import Home from './components/Home';
 import LoginTransition from './components/shared/LoginTransition';
 import Public from './components/Public';
 import Private from './components/Private';
@@ -34,7 +35,7 @@ const Routes = (props) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={App} />  
+        <Route path="/" exact component={Home} />  
         <Route path="/auth" exact component={LoginTransition} />  
         <Route path="/public" exact component={Public} />  
         <Route path="/auth/error" exact component={AuthError} />  
