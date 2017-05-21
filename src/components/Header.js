@@ -32,7 +32,7 @@ class Header extends React.Component {
   render() {
     return (
         <div className="Header">
-          <Row>
+          <Row className="block">
             
               <Navbar light toggleable className="Header-font">
 
@@ -79,13 +79,9 @@ class Header extends React.Component {
             </Col> 
           </Row>
 
-          <Row>
-            <Col>
-              <div className="border"> Separator </div>
-            </Col>
-          </Row>
+          <div className="block line-separator"></div>
 
-          <Row>
+          <Row className="block">
             <Col>
               <p className="Header-subheader">
               Oculo is being used by over 900 optometrists and 330 ophthalmologists within Australia. 
@@ -118,6 +114,9 @@ class Header extends React.Component {
               <div className="border"> Col 4 : High quality referrals ...</div>
             </Col>
           </Row>
+
+          <div className="block line-separator"></div>
+          
         </div>
     );
   }
