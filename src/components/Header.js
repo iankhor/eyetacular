@@ -6,7 +6,9 @@ import {  Collapse,
           Nav, 
           NavItem, 
           NavLink,
-          Button } from 'reactstrap';
+          Button,
+          Row,
+          Col } from 'reactstrap';
 
 import OculoLogo from './../../assets/img/logo.png'
 import AboutUs from './AboutUs'
@@ -29,40 +31,92 @@ class Header extends React.Component {
   render() {
     return (
         <div className="Header">
-        
-          <Navbar light toggleable className="Header-font">
+          <Row>
+            
+              <Navbar light toggleable className="Header-font">
 
-            <NavbarToggler right onClick={this.toggle} />
+                <NavbarToggler right onClick={this.toggle} />
 
-            <NavbarBrand href="/">
-              <img src={OculoLogo} className="Header-logo" alt="logo" />
-            </NavbarBrand>
+                <NavbarBrand href="/">
+                  <img src={OculoLogo} className="Header-logo" alt="logo" />
+                </NavbarBrand>
 
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavLink href="/Home">HOME</NavLink>
-                </NavItem>
-                <NavItem>
-                  <AboutUs />
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/Home">OCULO NETWORK</NavLink>
-                </NavItem>
-                <NavItem>
-                  <Pricing />
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/Home">FREE TRIAL</NavLink>
-                </NavItem>
-                <NavItem>
-                  <Button color="danger">LOGIN</Button>
-                </NavItem>
+                <Collapse isOpen={this.state.isOpen} navbar>
+                  <Nav className="ml-auto" navbar>
+                    <NavItem>
+                      <NavLink href="/Home">HOME</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <AboutUs />
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/Home">OCULO NETWORK</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <Pricing />
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/Home">FREE TRIAL</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <Button color="danger">LOGIN</Button>
+                    </NavItem>
 
-              </Nav>
-            </Collapse>
+                  </Nav>
+                </Collapse>
 
-          </Navbar>
+              </Navbar>
+          
+          </Row>
+
+          <Row>
+            <Col>
+              <p className="Header-title">We believe that connected eye care means better patient care</p>
+            </Col> 
+            <Col>
+              <div className="border"> [Video here]</div>
+            </Col> 
+          </Row>
+
+          <Row>
+            <Col>
+              <div className="border"> Separator </div>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <p className="Header-subheader">
+              Oculo is being used by over 900 optometrists and 330 ophthalmologists within Australia. 
+              The Oculo network provides eye care professionals with an innovative way to 
+              share clinical information and grow your business via a secure web-based platform. 
+
+              Benefits for patients and practitioners are:
+              
+              </p>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <div className="border"> Separator </div>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <div className="border"> Col 1 : Strengten ...</div>
+            </Col>
+            <Col>
+              <div className="border"> Col 2 : Promote ...</div>
+            </Col>
+            <Col>
+              <div className="border"> Col 3 : Fast cost effective ...</div>
+            </Col>
+            <Col>
+              <div className="border"> Col 4 : High quality referrals ...</div>
+            </Col>
+          </Row>
         </div>
     );
   }

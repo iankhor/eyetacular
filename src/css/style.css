@@ -1,5 +1,7 @@
 * {
   font-family: 'Source Sans Pro';
+  font-stretch: normal;
+  font-weight: 300;
 }
 .Header-font {
   font-size: 15px;
@@ -10,7 +12,22 @@
 .Header-button {
   font-size: 140px;
 }
-.Header,
+.Header-title {
+  font-family: 'Futura';
+  color: #55bfe0;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: left;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.Header-subheader {
+  font-family: 'Futura';
+  color: #434a54;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
 .Header-btn-dropdown {
   font-family: 'Source Sans Pro';
   font-size: 15px;
