@@ -10,6 +10,7 @@ import {  Collapse,
           Row,
           Col } from 'reactstrap';
 
+import HeaderImage from './../../assets/img/header-image.png'
 import OculoLogo from './../../assets/img/logo.png'
 import AboutUs from './AboutUs'
 import Pricing from './Pricing'
@@ -74,7 +75,7 @@ class Header extends React.Component {
               <p className="Header-title">We believe that connected eye care means better patient care</p>
             </Col> 
             <Col>
-              <div className="border"> [Video here]</div>
+              <img src={HeaderImage} className="Header-image"/>
             </Col> 
           </Row>
 
